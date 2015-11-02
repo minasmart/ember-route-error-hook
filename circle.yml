@@ -13,4 +13,6 @@ dependencies:
 
 test:
   override:
+    - mkdir -p $CIRCLE_TEST_REPORTS/xunit
     - ember test --config-file=testem-circle.json
+    - mv *.xml $CIRCLE_TEST_REPORTS/xunit
