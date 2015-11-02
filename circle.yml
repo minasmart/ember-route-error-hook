@@ -1,0 +1,10 @@
+general:
+  branches:
+    only:
+      - v2.0.2
+      - v2.1.0
+
+dependencies:
+  override:
+    - npm install -g bower
+    - bower install

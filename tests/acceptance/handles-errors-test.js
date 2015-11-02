@@ -24,7 +24,7 @@ test('it routes when no error is thrown', function(assert) {
   });
 });
 
-test('visiting /handles-errors', function(assert) {
+test('it catches thrown errors', function(assert) {
   assert.expect(1);
   const done = assert.async();
 
