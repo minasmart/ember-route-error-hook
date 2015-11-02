@@ -14,7 +14,6 @@ export default Ember.Route.extend({
   actions: {
     error(error) {
       window.handleError(error);
-      return false;
     }
   }
 });
