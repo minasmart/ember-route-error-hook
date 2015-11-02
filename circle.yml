@@ -7,4 +7,10 @@ general:
 dependencies:
   override:
     - npm install -g bower
+    - npm install -g ember-cli
+    - npm install
     - bower install
+
+test:
+  override:
+    - ember test --config-file=testem-circle.json
